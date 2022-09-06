@@ -1265,10 +1265,10 @@ class GenerateDocsCommand extends Command
         $novaApiDocsPath = config('l5-swagger.defaults.paths.docs') .
             DIRECTORY_SEPARATOR . config('l5-swagger.documentations.default.paths.joy_nova_api_docs_json');
 
-        $apiDocs        = file_get_contents($apiDocsPath);
+        $apiDocs     = file_get_contents($apiDocsPath);
         $novaApiDocs = file_get_contents($novaApiDocsPath);
 
-        $apiDocsData        = json_decode($apiDocs, true);
+        $apiDocsData     = json_decode($apiDocs, true);
         $novaApiDocsData = json_decode($novaApiDocs, true);
 
         $apiDocsData['paths'] = array_merge(

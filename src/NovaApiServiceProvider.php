@@ -83,8 +83,8 @@ class NovaApiServiceProvider extends ServiceProvider
     protected function registerPublishables(): void
     {
         $this->publishes([
-            __DIR__ . '/../config/nova-api.php' => config_path('joy-nova-api.php'),
-            __DIR__ . '/../config/l5-swagger.php'  => config_path('l5-swagger.php'),
+            __DIR__ . '/../config/nova-api.php'   => config_path('joy-nova-api.php'),
+            __DIR__ . '/../config/l5-swagger.php' => config_path('l5-swagger.php'),
         ], 'config');
 
         $this->publishes([
